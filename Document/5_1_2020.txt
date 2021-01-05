@@ -12,4 +12,4 @@ without creating a file/foolder on git project folder we cannot access the files
 
 Found that empty Directories can't be inserted in the Repositories.
 
-
+Files can be Replaced or Overwritten on pushing them.
