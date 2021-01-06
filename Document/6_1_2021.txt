@@ -1,0 +1,9 @@
+Read some of the advantages and uses of version control system.
+
+Went through Git Commands knowing some different command uses and applications.
+
+learnt about the git restore,diff,reset commands.
+
+gained some insights on the merging between branches and main.
+
+learnt to check history of commits and reverting using log and revert commands.
