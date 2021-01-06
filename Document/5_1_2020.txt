@@ -4,7 +4,7 @@ Found "git checkout <branch/origin>" can be used to change between branches and 
 Added folders ,files within the Repositories.
 
 Learned "fetch" command is used for checking the update on repository and 
-shows changes to be commites.
+shows changes to be commits.
 
 Learned the SSH key use and requirement on creation  of repositories.
 
@@ -12,4 +12,4 @@ without creating a file/foolder on git project folder we cannot access the files
 
 Found that empty Directories can't be inserted in the Repositories.
 
-
+Files can be Replaced or Overwritten on pushing them.
