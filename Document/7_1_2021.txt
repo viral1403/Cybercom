@@ -1,6 +1,6 @@
-learned to switch head between branches when HEad iis located at some File rather than 
+learned to switch head between branches when HEAD is located at some File rather than 
 origin using "git checkout -b  <branch Name>" it can transfer us to the origin and 
-branch if only want to tranfer head to branch can use  "git switch <branch-name>" .
+branch, if only want to tranfer head to branch can use  "git switch <branch-name>" .
 
 learned the difference between git rebase which does not commit and update the HEAD
 and  merge commit which updates HEAD and commits.
