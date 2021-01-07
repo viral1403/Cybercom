@@ -3,9 +3,9 @@ it can transfer us to the origin and branch if only want to tranfer head to bran
 use  "git switch <branch-name>".
 
 learned the difference between git rebase which does not commit and update the HEAD
-and  merge commiy which updates HEAD and commits.
+and  merge commit which updates HEAD and commits.
 
-The use of Stash which is used for reverting any file which is unecessary.
+The use of Stash which is used for reverting any file which is unnecessary.
 
 studied some of the common commands using git help.
 
