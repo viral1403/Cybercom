@@ -1,0 +1,9 @@
+Revised Html and css tags and properties , attributes.
+
+Completed the js tutorial of 8-1-2021.
+
+Completed the js challengs practices.
+
+completed the html practices, also the ones which were given later on.
+
+Searched on stackoverflow for some code changes requiring the practice.
