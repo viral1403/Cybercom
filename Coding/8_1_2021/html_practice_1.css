@@ -1,0 +1,32 @@
+.container{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	height: 450px;
+	width: auto;
+}
+.container .box{
+	border: 1px solid black;
+	padding: 2px;
+	float: right;
+	margin-right: 10px;
+}
+.container .box .image{
+	height: 315px;
+	width: 215px;
+	background-color: darkslategrey;
+}
+.container .box .caption{
+	text-align:center;
+	width: 215px;
+	position: relative;
+	background-color: darkgrey;
+	padding: 0px;
+	margin-bottom: 0px;	
+}
+.desc{
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+	width: 910px;
+}

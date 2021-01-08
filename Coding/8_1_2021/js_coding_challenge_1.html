@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Coding Challenge One</title>
+	</head>
+	<body>
+		<h2>JS Coding Challenge 1</h2>
+	</body>
+	<script>
+			//Mark's and John's masss and height
+			var mark_mass = prompt("Enter the mass of mark in kg");
+			var mark_height = prompt("Enter the height of mark in metre");
+			var john_mass = prompt("Enter the mass of john in kg");
+			var john_height = prompt("Enter the height of john in metre");
+			//BMI calc
+			var marks_bmi = mark_mass / (mark_height*mark_height);
+			var johns_bmi = john_mass / (john_height*john_height);
+			
+			//boolean check
+			var high_bmi = marks_bmi > johns_bmi;
+
+			//print line
+			console.log("Is Mark's BMI higher than John's? "+high_bmi);
+			
+	</script>
+</html>

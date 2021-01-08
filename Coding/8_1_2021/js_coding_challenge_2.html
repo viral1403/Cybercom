@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS Coding Challenge 2</title>
+	</head>
+	<body>
+		<h2>JS Coding Challenge 2</h2>
+	</body>
+	<script>
+		/*
+			for different scores for three games can use
+			var john_score = 0;
+			var i =1;
+			while(i > 3){
+				var j_score = prompt("enter the score of john in match "+i);
+				john_score = john_score + j_score;
+			}
+			john_score = john_score /3;
+
+			var mike_score = 0;
+			i=1;
+			while(i > 3){
+				var m_score = prompt("enter the score of mike in match "+i);
+				mike_score = mike_score + m_score;
+			}
+			mike_score = mike_score /3;
+
+			var mary_score = 0;
+			i=1;
+			while(i > 3){
+				var ma_score = prompt("enter the score of mike in match "+i);
+				maey_score = mary_score + ma_score;
+			}
+			mike_score = mike_score /3;
+
+		*/
+		var john_score = 89+120+103;
+		var mike_score = 116+94+123;
+		//Comparision between john and mike score
+		if(john_score > mike_score){
+			console.log("John's score is higher than Mike's. John's Score is : "+ john_score);
+		}
+		else if(john_score < mike_score){
+			console.log("Mike's score is higher than John's. Mike's Score is : "+ mike_score);
+		}
+		else{
+			console.log("Match Draw !!! \n Mike and John Scored : "+ mike_score);
+		}
+		//Comparision between john, mike and mary score
+		var mary_score = 97+134+105;
+
+		if(john_score > mike_score && john_score > mary_score){
+			console.log("John's score is higher. John's Score is : "+ john_score);
+		}
+		else if(john_score < mike_score && mike_score > mary_score){
+			console.log("Mike's score is higher. Mike's Score is : "+ mike_score);
+		}
+		else if(john_score < mary_score && mike_score < mary_score){
+			console.log("Mary's score is higher. Mary's Score is : "+ mary_score);
+		}
+		else if(john_score === mike_score){
+			if(john_score <mary_score)
+			{
+				console.log("Mary's score is higher. Mary's Score is : "+ mary_score);	
+			}
+			else{
+				console.log("Mike and John's score is higher.They Scored : "+john_score);
+			}
+		}
+		else if(mary_score === mike_score){
+			if(john_score > mary_score)
+			{
+				console.log("John's score is higher. Mary's Score is : "+ john_score);	
+			}
+			else{
+				console.log("Mike and Mary's score is higher.They Scored : "+mary_score);
+			}
+		}
+		else if(john_score === mary_score){
+			if(john_score < mike_score)
+			{
+				console.log("Mike's score is higher. Mike's Score is : "+ mary_score);	
+			}
+			else{
+				console.log("Mary and John's score is higher.They Scored : "+john_score);
+			}
+		}
+		else{
+			console.log("Match Draw !!! \n Mike , Mary and John Scored : "+ mike_score);
+		}
+
+	</script>
+</html>
