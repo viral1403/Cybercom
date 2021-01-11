@@ -1,0 +1,11 @@
+Learned different type of input types select,file,password,text,reset,radio and textarea tag.
+
+difference between a <btn> and <input type="submit"> tag as submit directly redirects to 
+the get/post method but the btn redirects to particular defined function on the <btn> tag.
+
+Found that the standard password masking symbol is '*'/'.' for different browser
+and it cannot be changed if want we can create a text password field but it may
+ be less secure.
+
+comleted the Js tutorials for 11 jan and completed the challenges. Started to watch
+the other videos.
