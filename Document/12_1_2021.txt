@@ -1,0 +1,12 @@
+learned some of the important aspects of css.
+
+Noted that the CSS must be done externally due to some 
+conflicts arrising in priority between the internal and external css.
+
+<noscript> tag used when we want to tell someone their javascript is disabled.
+
+knew about SCSS and PWA like stuffs.
+
+Studied the difference between local and session browser storage.
+
+completed my tutorials videos of today and started the tomorrow's videos.
