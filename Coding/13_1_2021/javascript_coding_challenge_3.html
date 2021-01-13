@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS coding challenge 3</title>
+	<style>
+		h1{
+			animation: anime;
+			animation-delay: 0.5ms;
+			animation-duration: 120s;
+			text-align: center;
+			animation-iteration-count: 100;
+		}
+		@keyframes anime{
+			0%{
+				color: rosybrown;
+				background: linear-gradient(to right,aqua,aquamarine,cyan,skyblue);
+			}
+			50%{
+				color: lightgoldenrodyellow;
+				background: linear-gradient(to right,red,green,blue,violet);
+			}
+			100%{
+				color: darkblue;
+				background: linear-gradient(to right,gold,yellow,orange,tomato);
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<h1>JS coding challenge 3</h1>
+
+	<script>
+		//John and his Family bills and discount
+
+		//bills and tip array
+
+		/*
+		if you want to enter the john's bill
+			var n = prompt('enter the number of items in the bill');
+
+			for(var i =0; i<n; i++){
+				john_bills[i] = prompt('Enter the bill for item '+ (i+1) +' here');
+			}
+		*/
+
+		var john_bills=[124, 48, 268];
+
+		var tip_given = [0, 0, 0];
+		//to do take the values from john array and add tip 
+		//next thing to do is add the tip
+
+		//tip calculator with 20% tip
+		function tip_calculator(){
+			var total_bills = 0; //To get sum of john's bill
+			for(var i =0; i<john_bills.length ; i++){
+				total_bills = total_bills + john_bills[i];
+			}
+			//tip calc from here on
+			if(total_bills < 50){
+				//when john gives 20% tip
+				for(var i =0; i<john_bills.length ; i++){
+					tip_given[i] = john_bills[i] +(john_bills[i] * 0.2);
+				}
+			}
+			else if(john_bills > 50  && john_bills < 200){
+				//when john gives 15% tip
+				for(var i =0; i<john_bills.length ; i++){
+					tip_given[i] = john_bills[i] +(john_bills[i] * 0.15);
+				}	
+			}
+			else{
+				for(var i =0; i<john_bills.length ; i++){
+					tip_given[i] = john_bills[i] +(john_bills[i] * 0.1);
+				}
+			}
+		}//function ends here
+		tip_calculator();
+
+		console.log('The Bill after the tip given by John is :');
+		for (var i = 0; i < tip_given.length; i++) {
+			console.log('item ' + (i+1) + ': $'+tip_given[i]);
+		}
+	</script>
+</body>
+</html>

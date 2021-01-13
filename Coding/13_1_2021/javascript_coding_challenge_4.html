@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Coding Challenge 4</title>
+	<style>
+		h1{
+			animation-name: anime;
+			animation-delay: 0.5ms;
+			animation-duration: 120s;
+			text-align: center;
+			font-family: Comic Sans,Comic Sans MS,cursive;
+			animation-iteration-count: 100;
+			color: lightgoldenrodyellow;
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<h1>JS Coding Challenge 4</h1>
+	<script>
+		//Mark and John's Bmi using objects and methods
+		var john ={
+			//john's object data
+			fullname : 'John s. Smith',
+			mass: 70, //in kg
+			height: 1.7, //in meter
+			//calculate bmi
+			calcBMI : function(){
+				var BMI = this.mass /(this.height * this.height);
+				return BMI;
+			}
+		};
+		var mark ={
+			//john's object data
+			fullname : 'Mark a. Antonito',
+			mass: 60, //in kg
+			height: 1.76, //in meter
+			//calculate bmi
+			calcBMI : function(){
+				var BMI = this.mass /(this.height * this.height);
+				return BMI;
+			}
+		};
+		/*
+		
+			If want to change height and mass of mark and john
+
+			john.height = prompt("Enter the height of john in meter");
+			john.mass = prompt('Enter the mass of john in kg');
+
+			mark.height = prompt("Enter the height of mark in meter");
+			mark.mass = prompt('Enter the mass of mark in kg');
+		*/
+		//Creating bmi variable ffor object john and mark
+
+		john.bmi = john.calcBMI();
+		mark.bmi = mark.calcBMI();
+		high_bmi();
+
+		//Creating a function to check BMI 
+		function high_bmi(){
+			if(mark.bmi > john.bmi){
+				console.log(mark.fullname+'`s BMi is '+mark.bmi.toPrecision(6)+' and is Higher');
+			}
+			if(mark.bmi < john.bmi){
+				console.log(john.fullname+'`s BMi is '+john.bmi.toPrecision(6)+' and is Higher');
+			}
+			else{
+				console.log(mark.fullname+' and '+john.fullname+" Both of them have same BMI :",john.bmi.toPrecision(6));
+			}
+		}
+	</script>
+</body>
+</html>

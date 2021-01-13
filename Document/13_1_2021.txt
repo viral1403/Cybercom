@@ -1,0 +1,8 @@
+watched the practical and understood about the session storage and local storage.
+
+api call is required for every session storage.
+
+local storage is on the server side and the data size may increase if client details are 
+added of different sessions . so, for clients the session storage is used.
+
+done with the js challenges and completed today's tutorial videos.
