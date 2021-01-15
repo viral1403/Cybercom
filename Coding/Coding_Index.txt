@@ -1,3 +1,4 @@
 8-1-2021		table creations, js challenge1 &2, Html & css from image
 11-1-2021		Html &css nested table , Testimonials page
 12-1-2021		Javascript challenge 3&4
+15-1-2021		Javacript challenge 5&6 , Html Practice 4 & 5 on tables

@@ -1,0 +1,10 @@
+Watched all of the videos.
+
+Understand how a password field is created using JS keyup keydown 
+methods with a textbox in html
+
+Knew about object methods and mutation form the videos .
+
+Also learnt the function passing as an argument.
+
+learnt the primitive and non primitive difference with the video practical done.
