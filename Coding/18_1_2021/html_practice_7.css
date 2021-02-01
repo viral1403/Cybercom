@@ -1,0 +1,83 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+form{
+	position: relative;
+}
+fieldset{
+	border: 1px solid black;
+	width: 600px;
+	margin-left: 30%;
+	margin-bottom:30px;
+}
+.interests{
+	margin-bottom: 10px;
+}
+legend{
+	margin-left: 10px;
+}
+table{
+	padding: 10px;
+}
+td{
+	width: 200px;
+	padding: 5px;
+}
+input[name='image']{
+	background-color: white;
+}
+i{
+	background: skyblue;
+	margin-left: -20px;
+	pointer-events: none;
+}
+input[type='submit']{
+	margin-left: 600px;
+}
+input[type='submit'],input[type='reset']{
+	width: 80px;
+	left: 30%;
+}
+.diffHobbies{
+	border: 1px solid black;
+	width: 100px;
+	padding-left: 5px;
+}
+.diffHobbies label{
+	cursor: pointer;
+}
+.diffHobbies label input[type="checkbox"]{
+	display: none;
+}
+.diffHobbies label span{
+	display: inline-block;
+	overflow: hidden;
+	user-select: none;
+}
+.diffHobbies label input[type="checkbox"]:checked ~ span{
+	font-weight: bold;
+	font-size: 15.5px;
+}
+.transport{
+	border: 1px solid black;
+	width: 100px;
+	padding-left: 5px;
+}
+.transport label{
+	cursor: pointer;
+}
+.transport label input[type="checkbox"]{
+	display: none;
+}
+.transport label span{
+	display: inline-block;
+	overflow: hidden;
+	user-select: none;
+	padding-left: 20px;
+}
+.transport label input[type="checkbox"]:checked ~ span{
+	font-weight: bold;
+	font-size: 15.5px;
+	padding: 0px;
+}

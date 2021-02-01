@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Practice 7</title>
+	<link rel="stylesheet" href="html_practice_7.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css">
+</head>
+<body>
+	<form action="html_practice_7_2.html" redirect>
+		<fieldset class="address">
+			<legend>Your Address</legend>
+			<table class="addressTable">
+			<tr>
+				<td>
+					First Name
+				</td>
+				<td>
+					<input type="text" name="firstName">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name
+				</td>
+				<td>
+					<input type="text" name="lastName"><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Street
+				</td>
+				<td>
+					<input type="text" name="street"><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					City
+				</td>
+				<td>
+					<input type="text" name="city"><br>
+				</td>
+			</tr>
+		</table>
+		</fieldset>
+		<fieldset class="addDetails">
+			<legend>Additional Details</legend>
+			<table>
+				<tr>
+					<td>
+						Biography
+					</td>
+					<td>
+						<textarea name="biography"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Image
+					</td>
+					<td>
+						<input type="file" name="image" value="choose file">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Age Group
+					</td>
+					<td>
+						<select name="ageGroup" single>
+							<option value="0 to 9 years">0 to 9 years</option>
+							<option value="10 to 18 years">10 to 18 years</option>
+							<option value="19 to 25 years">19 to 25 years</option>
+							<option value="25 to 50 years">25 to 50 years</option>
+							<option value="more than 50 years">>50 years</option>
+						</select>
+						<i class="fas fa-sort"></i>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset class="interests">
+			<legend>Interests</legend>
+			<table>
+				<tr>
+					<td>
+						<span>Hobbies</span>
+					</td>
+					<td>
+						<div class="diffHobbies">
+							<label>
+								<input type="checkbox" name="Soccer" value="Playing Soccer">
+								<span>Playing Soccer</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="dance" value="Dancing">
+								<span>Dancing</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="Garden" value="Gardening">
+								<span>Gardening</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="Movies" value="Watching Movies">
+								<span>Watching Movies</span>
+							</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Favourite Car?</span>
+						</td>
+					<td>
+						<select name="car">
+							<option value="Volvo">Volvo</option>
+							<option value="Mercedes">Mercedes</option>
+							<option value="Mustang">Mustang</option>
+							<option value="Chevrolet">Chevrolet</option>
+						</select>
+						<i class="fas fa-sort"></i>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>Favourite public transort?</span>
+					</td>
+					<td>
+						<div class="transport">
+							<label>
+								<input type="checkbox" name="Ground" value="Ground">
+								<span>Ground</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="Train" value="Train">
+								<span>Train</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="Bus" value="Bus">
+								<span>Bus</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="Water" value="Water">
+								<span>Water</span>
+							</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<input type="submit" name="Submit">
+		<input type="reset" name="Reset">
+	</form>
+</body>
+</html>

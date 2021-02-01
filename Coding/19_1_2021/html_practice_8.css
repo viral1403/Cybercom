@@ -1,0 +1,69 @@
+*{
+	padding: 0px;
+	zoom: 100%;
+}
+
+form{
+	border: 1px solid black;
+	justify-content: center;
+	width: 400px;
+	background-color: ghostwhite;
+	margin-left: 30%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;	
+	padding: 15px 30px 30px 30px;
+}
+table{
+	width: 100%;
+}
+h3{
+	padding-bottom: 10px;
+}
+.accountInfo{
+	margin-left: -5px;
+}
+.contactInfo{
+	margin-left: 20px;
+}
+td{
+	padding-bottom: 10px;
+}
+td:nth-child(1){
+	text-align: right;
+}
+select[name="securityQuestion"]{
+	width: 240px;
+}
+select[name="month"],select[name="day"],select[name="year"]{
+	width: 65px;
+}
+select[name="gender"]{
+	width: 200px;
+}
+td .query{
+	padding-left: 40px;
+	font-size: 15px;
+}
+input[type="text"],input[type="password"],input[type="email"]{
+	width: 200px;
+}
+input[type="tel"]{
+	width: 100px;
+}
+input[name="zipcode"]{
+	width: 60px;
+	margin-right: 5px;
+}
+input[name="zipcodeOp"]{
+	width: 60px;
+	text-align: center;
+}
+input[type="submit"]{
+	margin-top: 30px;
+	margin-left: 100px;
+}
+.instructionText{
+	font-size: 12px;
+	padding-top: -10px;
+}

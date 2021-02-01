@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Practice 6</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/fontawesome.min.css">
+	<link rel="stylesheet" href="html_practice_6.css">
+</head>
+<body>
+	<div class="container">
+		<div class="innerContainer">
+			<div class="img">
+				<h2><b>Contact Us</b></h2>
+			</div>
+			<div class="textbox">
+
+				<input type="text" name="userFullName" placeholder="&#xf007;&nbsp &nbsp Full Name">
+			</div>
+			<div class="textbox">
+				<input type="email" name="userEmail" placeholder="&#xf0e0;&nbsp &nbsp Pasword">	
+			</div>
+			<div class="textbox">
+				<input type="text" name="userContact" placeholder="&#xf10b;&nbsp &nbsp &nbsp Eg: +1800 000000">
+			</div>
+			<div class="textbox">
+				<textarea name="userComents" placeholder="&#xf075;&nbsp &nbsp Your comments.."></textarea>
+			</div>
+			<div class="userSubmit">
+				<input type="submit" name="submit" value="Submit" onclick="onSubmit()">
+			</div>
+		</div>
+	</div>
+	<script>
+		function onSubmit(){
+			alert("Your Data Has Been Submitted");
+		}
+	</script>
+</body>
+</html>

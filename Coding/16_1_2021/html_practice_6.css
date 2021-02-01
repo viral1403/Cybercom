@@ -1,0 +1,81 @@
+*{
+	zoom: default;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	text-align: center;
+	position: relative;
+	margin-top: 100px;
+	left: 30%;
+	width: 400px;
+	height: 400px;
+	box-shadow: 0.5px;
+}
+.img{
+	background: url("https://images.ctfassets.net/hrltx12pl8hq/4f6DfV5DbqaQUSw0uo0mWi/ff068ff5fc855601751499d694c0111a/shutterstock_376532611.jpg?fit=fill&w=800&h=300") no-repeat;
+	width: 400px;
+	height: 60px;
+	padding-top: 30px;
+	margin-bottom: 40px;
+}
+input{
+	border: 1px solid darkgray;
+	margin-bottom: 5px;
+}
+.innerContainer{
+	position: absolute;
+}
+h2{
+	color: white;
+	margin-bottom: 30px;
+}
+div{
+	margin-bottom: 5px;
+}
+input[type="text"]{
+	width: 300px;
+	height: 30px;
+}
+input[type="email"]{
+	width: 300px;
+	height: 30px;
+}
+textarea{
+	width: 300px;
+	height: 100px;
+}
+h3{
+	height: 20px;
+	padding: 3px;
+}
+input[type='submit']{
+	width: 80px;
+	height: 30px;
+	margin-top: 20px;
+	background-color: violet;
+	text-align: center;
+	box-shadow: 0.25px 0.25px 0.25px 0px;
+	border: 1px solid black;
+	border-radius: 50px 50px;
+}
+input[type="submit"]:hover{
+	background-color: aquamarine;
+}
+.textbox{
+	overflow: hidden;
+	font-size: 14px;
+}
+
+/*
+
+	icon and text alignment from here
+
+*/
+
+input , textarea{
+	text-indent: 10px;
+	font-family: fontawesome;
+	font-size: 15px;
+}
