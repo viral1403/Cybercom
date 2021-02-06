@@ -3,20 +3,91 @@
 <head>
 	<title>Login Page</title>
 	<style>
-		
+		*{
+			margin: 0px;
+			padding:0px;
+		}
+		form{
+			margin-left: 40%;
+			margin-top: 100px;
+			position: relative;
+			font-family: arial;
+		}
+		table{
+			background-color: lightgoldenrodyellow; 
+			justify-content: center;
+			padding: 20px;
+			border: 1px solid black;
+
+		}
+		input[type="email"],input[type="password"]{
+			width: 200px;
+			height: 20px;
+			font-size: 12px;
+			border: 1px solid black;
+			text-align: left;
+		}
+		span{
+			text-align: center;
+			font-size: 15px;
+			margin-left: 90px;
+		}
+		td{
+			padding-bottom: 10px;
+			border-radius: 0px;
+
+		}
+		input[type="submit"]{
+			width: 205px;	
+			border: 1px solid black;
+			background: orange;
+			font-weight: bold;
+			font-size: 12px;
+			height: 20px;
+			color: white;
+			text-align: center;
+
+		}
+		h3{
+			margin-left: 100px;
+			margin-bottom: 10px;
+		}
 	</style>
 </head>
 <body>
 	<div class="container">
 
-		<form action="">
-			<input type="email" id="email" placeholder=" Email"><br>
-			<input type="password" id="password" placeholder=" Password"><br>
-
-			<input type="submit" id="login-submit" value="Submit" onclick="login()">
-
-			<input type="submit" id="registration-submit" value="Registration" onclick="Reg()">
+		<form>
+			<h3>Login</h3>
+			<table>
+				<tr>
+					<td>
+						<input type="email" id="email" placeholder=" Email"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="password" id="password" placeholder=" Password"><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" id="login-submit" value="Submit" onclick="login()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>OR</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" id="registration-submit" value="Registration" onclick="Reg()">
+					</td>
+				</tr>
+			</table>			
 		</form>
+
 		<script>
 			function login(){
 				var email = document.getElementById('email').value;

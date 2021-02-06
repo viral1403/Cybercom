@@ -11,21 +11,29 @@
 			width: 230px;
 			padding-top: 100px;
 			float:left;
-			height: 700px;
-			background-color: saddlebrown;
+			height: 557px;
+			background-color: sandybrown;
 		}
-		
+		.frame{
+			width: 1348px;
+			height: 657px;
+		}
 		.navitem td{
-			padding-left: 80px;
+			padding-left: 60px;
 			padding-top: 0px;
 			padding-bottom: 50px;
 		}
+		.frameitem{
+			padding: 10px;
+			border-spacing: 40px;
+		}
 		.frameitem td{
 			text-align: center;
-			border: 1px solid black;
-			padding-top: 0px;
+			width: 400px;
+			padding-top: 10px;
 			padding-bottom: 100px;
-			font-size: 30px;
+			font-size: 20px;
+			border: none;
 			font-family: arial;
 		}
 		h3{
@@ -39,13 +47,18 @@
 			font-family: arial;
 			color: black;
 			border: none;
-			background-color: saddlebrown;
+			background-color: sandybrown;
 		}
-		.box{
-			height: 100px;
-			width: 200px;
-			background-color: yellow;
+		#data-1{
+			background-color: palegoldenrod;
 		}
+		#data-2{
+			background-color: palevioletred;
+		}
+		#data-3{
+			background-color: lightpink;
+		}	
+
 	</style>
 </head>
 <body>
@@ -55,7 +68,7 @@
 
 			<tr>
 				<td>
-					<a href="">Dashboard</a>
+					<a href="#">Dashboard</a>
 				</td>
 			</tr>
 			<tr>
@@ -79,16 +92,16 @@
 		<table class="frameitem">
 			<tr>
 				<td id="data-1">
-					<span>User < 18 Years</span>
-					<span id="child"></span>
+					<span>User < 18 Years</span><br>
+					<span class="age" id="child"></span>
 				</td>
 				<td id="data-2">
-					<span>18-50 Years Users</span>
-					<span id="adult"></span>
+					<span>18-50 Years Users</span><br>
+					<span class="age" id="adult"></span>
 				</td>
 				<td id="data-3">
-					<span>User > 50 Years</span>
-					<span id="old"></span>		
+					<span>User > 50 Years</span><br>
+					<span class="age" id="old"></span>
 				</td>
 			</tr>
 		</table>

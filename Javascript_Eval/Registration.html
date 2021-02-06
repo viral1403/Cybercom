@@ -5,12 +5,42 @@
 	<meta lang="en">
 	<title>Registration</title>
 	<style>
-		
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		form{
+			margin-left: 40%;
+			margin-top: 100px;
+		}
+		table{
+			border: 1px solid black;
+			padding: 20px;
+		}
+		td{
+			padding: 5px;
+		}
+		input,select{
+			width: 200px;
+		}
+		.checkbox-text{
+			margin-left: -120px;
+		}
+		input['submit']{
+			color: white;
+			background-color: orange;
+			
+		}
 	</style>
 </head>
 <body>
 	<form action="Registration.html">
 		<table>
+			<tr>
+				<td>
+					<span>Registration</span>
+				</td>
+			</tr>
 			<tr>
 				<td>
 					<input type="text" id="adminName" placeholder="id" required>
@@ -54,7 +84,7 @@
 			<tr>
 				<td>
 					<input type="checkbox" id="terms">
-					<span>Terms & Conditions</span>
+					<span class="checkbox-text">Terms & Conditions</span>
 				</td>
 			</tr>
 			<tr>
