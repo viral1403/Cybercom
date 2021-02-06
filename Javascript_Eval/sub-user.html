@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sub-user</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.navbar{
+			width: 230px;
+			padding-top: 100px;
+			float:left;
+			height: 700px;
+			background-color: saddlebrown;
+		}
+		.frame{
+			width: 1348px;
+			height: 800px;
+		}
+		.navitem td{
+			padding-left: 80px;
+			padding-top: 0px;
+			padding-bottom: 50px;
+		}
+		.frameitem td{
+			justify-content: center;
+			padding-left: 200px;
+			padding-top: 50px;
+			font-size: 30px;
+			font-family: arial;
+		}
+		a{
+			font-size: 20px;
+			text-decoration: none;
+			font-family: arial;
+			color: black;
+			border: none;
+			background-color: saddlebrown;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<table class="navitem">
+			<tr>
+				<td>
+					<a href="#">Dashboard</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="login.html">Log Out</a>
+				</td>
+			</tr>
+		</table>
+		
+		
+	</div>
+	<div class="frame">
+		<table class="frameitem">
+			<tr>
+				<td>
+					<span id="welcome">Welcome to Cybercomm Creation</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span id="birthday"></span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+		document.querySelector("#logout").addEventListener('click',()=>{
+			window.location.href="login.html";
+		});
+		var subuser = JSON.parse(location.getItem('subuser'));
+		
+	</script>
+</body>
+</html>

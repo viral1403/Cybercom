@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<form action="">
+			<input type="email" id="email" placeholder=" Email"><br>
+			<input type="password" id="password" placeholder=" Password"><br>
+
+			<input type="submit" id="login-submit" value="Submit" onclick="login()">
+
+			<input type="submit" id="registration-submit" value="Registration" onclick="Reg()">
+		</form>
+		<script>
+			function login(){
+				var email = document.getElementById('email').value;
+				var password = document.getElementById('password').value;
+				var admin = JSON.parse(localStorage.getItem('AdminData'));
+				var subuser = JSON.parse(localStorage.getItem('UserData'));
+				if(admin != null){
+					var tempuser = admin.find(id => id.username === username && id.password === username);
+					if(tempuser){
+						window.location.href="main.html";
+					}
+				}
+				if(sub_user != null){
+					var tempuser = subuser.find(id => id.username === username && id.password === username);
+					if(tempuser != null){
+						widow.location.href="sub-user.hmtl";
+					}
+				}
+			}
+			function Reg(){
+				window.location.href = "Registration.html";
+			}
+		</script>
+</body>
+</html>

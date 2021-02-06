@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta lang="en">
+	<title>Registration</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<form action="Registration.html">
+		<table>
+			<tr>
+				<td>
+					<input type="text" id="adminName" placeholder="id" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="email" id="adminEmail" placeholder="Email" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="adminPassword" placeholder="Password" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" id="adminRepassword" placeholder="Confirm Password" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select id="City">
+						<option value="null">Select City</option>
+						<option value="Rajkot">Rajkot</option>
+						<option value="Ahmedabad">Ahmedabad</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Pune">Pune</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select id="State">
+						<option value="null">Select State</option>
+						<option value="Gujarat">Gujarat</option>
+						<option value="Maharashtra">Maharashtra</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="terms">
+					<span>Terms & Conditions</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" id="registerAdmin" value="Register">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<script>
+		
+		function Register(){
+
+			var tempname = document.getElementById("adminName").value;
+			var tempemail = document.getElementById("adminEmail").value;
+			var temppassword = document.getElementById("adminPassword").value;
+			var tempRepassword = document.getElementById("adminRepassword").value;;
+
+			var tempstate = document.getElementById("State");
+			var tempcity = document.getElementById("City");
+			var check = document.querySelector("#terms:checked");
+
+			console.log(tempname);
+
+			if(check == null){
+				alert("Terms and Conditions not accepted");
+			}
+			if(temppassword != tempRepassword){
+				alert("password unmatch found");
+			}	
+			var tempuser = JSON.parse(localStorage.getItem('AdminData'));
+			if(tempuser != null){
+				var user = tempuser.find(id => id.username === username && id.password === username);
+			}
+			if(user){
+				alert("Admin already Registered")
+			}
+
+			else{
+				var user = JSON.parse(localStorage.getItem("admin"));
+				user.push({name:tempname,username:tempemail,password:temppassword,state:tempstate,tempcity});
+				localStorage.setItem('AdminData',JSON.stringify(user));
+				window.location.href = "login.html";
+				
+			}
+			admin.push(AdminPerson);
+		}
+		console.log(localStorage);
+	</script>
+</body>
+</html>

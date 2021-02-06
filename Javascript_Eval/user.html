@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User</title>
+	
+</head>
+<body>
+	<div class="navbar">
+		<table class="navitem">
+			<tr>
+				<td>
+					<a href="">Dashboard</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="user.html">Users</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="loginsession.html">Login Session</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="login.html">Log Out</a>			
+				</td>
+			</tr>
+		</table>
+	</div>
+	  <div class="frame">
+	    <table>
+	      <form  onsubmit="return userdataadd()">
+	        <tr>
+	          <td><input type="text" id="username" name="name" placeholder="name"></td>
+	          <td><input type="email" id="useremail" name="email" placeholder="email"></td>
+	          <td><input type="password" name="password" id="userpassword" placeholder="password"></td>
+	          <td><input type="date" name="date" id="userbday" placeholder="birthdate"></td>
+	        </tr>
+	        <tr>
+	          <td><button type="submit">AddUser</button></td>
+	        </tr>
+
+	      </form>
+	    </table>
+	    <table class="user-table">
+	      <thead>
+	        <tr>
+	          <th>Name</th>
+	          <th>Email</th>
+	          <th>password</th>
+	          <th>BirthDate</th>
+	          <th colspan="2">Action</th>
+	        </tr>
+	      </thead>
+	      <tbody id="user-data">
+
+	      </tbody>
+    </table>
+  </div>
+  <script>
+  		var user_data_count = 0;
+  		function userdataadd(){
+  			var username = document.getElementById('username').value;
+  			var password = document.getElementById('userpassword').value;
+  			var email = document.getElementById('useremail').value;
+  			var bday = document.getElementById('userbday').value;
+
+  			if(username ==""){
+  				alert('Enter valid username');
+  			}
+  			if(password ==""){
+  				alert('Enter valid password');
+  			}
+  			if(email ==""){
+  				alert('Enter valid email');
+  			}
+  			if(bday ==""){
+  				alert('Enter valid Birthdate');
+  			}
+  			else{
+
+  				if(JSON.parse(localStorage.getItem('subuser')) == null){
+  					var temp_subuser = new Array();
+
+	  				temp_subuser.push({username:username,userpassword:password,useremail:email,userbday:bday});
+
+	  				localStorage.setItem('subuser', JSON.stringify(temp_subuser));
+  				}
+  				
+  				else{
+  					var temp_subuser = JSON.parse(localStorage.getItem('subuser'));
+
+	  				temp_subuser.push({username:username,userpassword:password,useremail:email,userbday:bday});
+
+	  				localStorage.setItem('subuser', JSON.stringify(temp_subuser));
+  				}
+  				var userdata = JSON.parse(localStorage.getItem(subuser));
+  				var subusertable = document.getElementById('user-table');
+  				console.log("hello, "+usertable)
+
+  				for(var items in userdata)
+			    {
+			      user_data_count=user_data_count+"<tr id="+items+"><td>"+userdata[items]["username"]+"</td><td>"+userdata[items]["useremail"]+"</td><td>"+userdata[items]["userpassword"]+"</td><td>"+userdata[items]["userbday"]+"</td><td><button onclick='edit("+items+")'>Edit</button></td></td><td><button onclick='Delete("+items+")'>Delete</button></td></tr>";
+			      
+			    }
+			    usertable.innerHTML=user_data_count;
+			    user_data_count="";
+			    return false;
+			  }
+			  function edit(a)
+			  {
+			    let tr=document.getElementById(a);
+			    tr.cells[0].innerHTML="hello";
+			    tr.cells[1].innerHTML="hello";
+			    tr.cells[2].innerHTML="hello";
+			    tr.cells[3].innerHTML="hello";
+			  }
+			  function Delete(a)
+			  {
+			    let delete_userdata=JSON.parse(localStorage.getItem('subuser'));
+			    
+			    
+			    document.getElementById("usertable").deleteRow(a);
+			    delete_userdata.splice(a);
+			    localStorage.setItem("subuser",JSON.stringify(delete_userdata));
+			  }
+			}
+  </script>
+</body>
+</html>

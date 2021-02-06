@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.navbar{
+			width: 230px;
+			padding-top: 100px;
+			float:left;
+			height: 700px;
+			background-color: saddlebrown;
+		}
+		
+		.navitem td{
+			padding-left: 80px;
+			padding-top: 0px;
+			padding-bottom: 50px;
+		}
+		.frameitem td{
+			text-align: center;
+			border: 1px solid black;
+			padding-top: 0px;
+			padding-bottom: 100px;
+			font-size: 30px;
+			font-family: arial;
+		}
+		h3{
+			margin-left: 50px;
+			margin-top: -80px;
+			margin-bottom: 100px;
+		}
+		a{
+			font-size: 20px;
+			text-decoration: none;
+			font-family: arial;
+			color: black;
+			border: none;
+			background-color: saddlebrown;
+		}
+		.box{
+			height: 100px;
+			width: 200px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<h3 id="uname">Hello, </h3>
+		<table class="navitem">
+
+			<tr>
+				<td>
+					<a href="">Dashboard</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="user.html">Users</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="loginsession.html">Login Session</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="login.html">Log Out</a>			
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="frame">
+		<table class="frameitem">
+			<tr>
+				<td id="data-1">
+					<span>User < 18 Years</span>
+					<span id="child"></span>
+				</td>
+				<td id="data-2">
+					<span>18-50 Years Users</span>
+					<span id="adult"></span>
+				</td>
+				<td id="data-3">
+					<span>User > 50 Years</span>
+					<span id="old"></span>		
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
