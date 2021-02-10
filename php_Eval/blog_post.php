@@ -33,13 +33,7 @@ if(isset($_POST['edit'])){
 
 <form method="POST" action="blog_post.php">
 	<div class="top-right-bar">
-		<?php if($blog_manage === false){ ?>
 		<input type="submit" name="manage_category" value="Manage Category">
-		<?php } ?>
-
-		<?php if($blog_manage === true){ ?>
-		<input type="submit" name="manage_post" value="Manage Post">
-		<?php } ?>
 
 		<input type="submit" name="manage_profile" value="Manage Profile">
 		<input type="submit" name="logout" value="Logout">
